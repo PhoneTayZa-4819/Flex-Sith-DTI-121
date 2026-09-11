@@ -15,7 +15,6 @@
       <a class="brand" href="#home"><span class="brand-mark">F</span><span>Flex<span>Sith</span></span></a>
       <nav class="desktop-nav">
         <a href="#home">Home</a>
-        <a href="#video">Demo Video</a>
         <a href="#shop">Shop</a>
         <a href="#modules">Modules</a>
         <a href="#business">Business</a>
@@ -34,7 +33,7 @@
           <p>FlexBottle is a 500ml collapsible water bottle with a twist-lock base and interchangeable modules for travel, study, work and outdoor adventures.</p>
           <div class="hero-actions">
             <a class="btn primary" href="#shop">Shop FlexBottle — ฿799</a>
-            <a class="btn secondary" href="#video">▶ Watch Bottle Demo</a>
+            <button class="btn secondary" onclick="showDemo()">▶ View Product Demo</button>
           </div>
           <div class="trust-row">
             <span>✓ Foldable design</span><span>✓ 500ml capacity</span><span>✓ Modular base</span>
@@ -42,22 +41,8 @@
         </div>
         <div class="hero-product" style="display: flex; justify-content: center; align-items: center;">
           <div class="glow"></div>
+          <!-- Replaced CSS bottle with your actual product image -->
           <img src="27054.jpg" alt="FlexSith Bottle with Fan" style="width: 100%; max-width: 320px; border-radius: 20px; box-shadow: 0 25px 50px rgba(0,0,0,0.25); position: relative; z-index: 2;">
-        </div>
-      </section>
-
-      <!-- Video Demonstration Section -->
-      <section id="video" class="section alt" style="text-align: center;">
-        <div class="section-head" style="justify-content: center; text-align: center; display: block; margin-bottom: 20px;">
-          <div class="eyebrow">SEE IT IN ACTION</div>
-          <h2>Collapsible & Modular Design</h2>
-          <p style="margin: auto;">Watch how the FlexSith bottle easily collapses and attaches to external modules.</p>
-        </div>
-        <div style="max-width: 450px; margin: 0 auto; border-radius: 20px; overflow: hidden; box-shadow: 0 15px 35px rgba(0,0,0,0.15);">
-          <video controls autoplay loop muted playsinline style="width: 100%; display: block;">
-            <source src="product-demo.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
         </div>
       </section>
 
@@ -71,6 +56,7 @@
       <section id="shop" class="section">
         <div class="section-head"><div><div class="eyebrow">SHOP</div><h2>Build your FlexBottle</h2></div><p>Choose a base and add the module that fits your day.</p></div>
         <div class="product-grid">
+          <!-- Featured Product with your second image -->
           <article class="product-card featured" style="grid-column: span 2;">
             <img src="27055.jpg" alt="FlexSith Power Bank Module" style="width: 100%; height: 250px; object-fit: cover; border-radius: 16px; margin-bottom: 18px;">
             <div class="tag blue">MOST POPULAR BUNDLE</div><h3>FlexSith + Power Bank & Fan</h3><p>FlexBottle bundled with an interchangeable power-bank and cooling fan module.</p>
