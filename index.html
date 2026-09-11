@@ -34,7 +34,6 @@
           <p>FlexBottle is a 500ml collapsible water bottle with a twist-lock base and interchangeable modules for travel, study, work and outdoor adventures.</p>
           <div class="hero-actions">
             <a class="btn primary" href="#shop">Shop FlexBottle — ฿799</a>
-            <!-- Updated Button: Links directly to your YouTube video in a new tab -->
             <a class="btn secondary" href="https://youtube.com/shorts/7KhmTBz2Fow?si=_bS8jFVizsaZULYX" target="_blank">▶ View Prototype Video</a>
           </div>
           <div class="trust-row">
@@ -87,22 +86,20 @@
         </div>
       </section>
 
+      <!-- Updated Modules Section with Clickable Images -->
       <section id="modules" class="section">
-        <div class="section-head"><div><div class="eyebrow">ONE BASE • MANY USES</div><h2>Switch modules in seconds</h2></div><p>Twist the folded section left or right to engage the lock mechanism.</p></div>
-        <div class="module-demo">
-          <div class="steps">
-            <div class="step active"><b>01</b><span>Fold</span><small>Collapse the bottle to save bag space.</small></div>
-            <div class="step"><b>02</b><span>Twist</span><small>Rotate the base to unlock the module.</small></div>
-            <div class="step"><b>03</b><span>Swap</span><small>Attach Power, Lamp or Blender modules.</small></div>
-          </div>
-          <div class="swap-stage">
-            <div class="ring"></div><div class="bottle swap-bottle"><div class="bottle-cap"></div><div class="bottle-neck"></div><div class="bottle-body"><div class="logo-mini">FLEX<br>SITH</div></div><div class="bottle-base"></div></div>
-            <div class="floating-card"><span>⚡</span><b>Power Bank</b><small>Ready to swap</small></div>
-          </div>
+        <div class="section-head" style="text-align: center; display: block;">
+          <div class="eyebrow">HOW IT WORKS</div>
+          <h2>Collapse & Switch in Seconds</h2>
+          <p>Click the images below to view the full product manuals.</p>
+        </div>
+        <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; margin-top: 30px;">
+          <img src="33278.jpg" alt="How to collapse FlexSith" style="flex: 1 1 400px; max-width: 100%; border-radius: 16px; cursor: pointer; box-shadow: 0 10px 30px rgba(0,0,0,0.1); transition: transform 0.2s;" onclick="openImageModal(this.src)" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+          <img src="33279.jpg" alt="FlexSith Module Features" style="flex: 1 1 400px; max-width: 100%; border-radius: 16px; cursor: pointer; box-shadow: 0 10px 30px rgba(0,0,0,0.1); transition: transform 0.2s;" onclick="openImageModal(this.src)" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
         </div>
       </section>
 
-      <section class="section problem">
+      <section class="section problem alt">
         <div class="problem-copy"><div class="eyebrow">CUSTOMER PROBLEM</div><h2>One bottle. Less luggage.</h2><p>Students, office workers, travelers, hikers and campers often carry a water bottle plus small gadgets. FlexSith combines functions while saving bag space.</p></div>
         <div class="problem-cards">
           <div><span>🎒</span><b>Too much to carry</b><small>Bottle + gadgets take valuable space.</small></div>
@@ -136,6 +133,14 @@
 
   <div class="modal hidden" id="cartModal"><div class="modal-box"><button class="close" onclick="closeCart()">×</button><div class="eyebrow">YOUR CART</div><h2>FlexSith order</h2><div id="cartItems"></div><div class="cart-total"><span>Total</span><b id="cartTotal">฿0</b></div><button class="btn primary full" onclick="checkout()">Demo Checkout</button></div></div>
   
+  <!-- New Full-Screen Image Viewer Modal -->
+  <div class="modal hidden" id="imageModal" style="z-index: 9999; padding: 20px; background: rgba(5,19,37,0.9);">
+    <div style="position: relative; max-width: 90vw; max-height: 90vh; display: flex; justify-content: center; align-items: center;">
+      <button class="close" onclick="closeImageModal()" style="position: absolute; top: -15px; right: -15px; z-index: 10000; box-shadow: 0 4px 10px rgba(0,0,0,0.3);">×</button>
+      <img id="modalImageSrc" src="" style="max-width: 100%; max-height: 85vh; border-radius: 12px; object-fit: contain; box-shadow: 0 20px 50px rgba(0,0,0,0.5);">
+    </div>
+  </div>
+
   <div class="toast" id="toast"></div>
   <script src="app.js"></script>
 </body>
